@@ -1,0 +1,422 @@
+/*
+1.  Reset CSS
+2.  Global CSS
+3.  Header CSS
+4.  Navigation CSS
+5.  Services
+6.  About CSS
+7.  Vision CSS
+8.  FastFood CSS
+9.  Latestnews CSS
+10. Customer CSS
+11. Contact CSS
+12. Footer CSS
+13. Tooltip CSS
+*/
+/*----------------------------1. Reset----------------------------*/
+/**
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent
+}
+
+body {
+    line-height:1
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display:block
+}
+
+nav ul {
+    list-style:none
+}
+
+blockquote,q {
+    quotes:none
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content:'';
+    content:none
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:700
+}
+
+del{
+    text-decoration:line-through
+}
+
+abbr[title],dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #ccc;
+    margin:1em 0;
+    padding:0
+}
+
+input,select {
+    vertical-align:middle
+}
+
+* {
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box
+}
+
+img {
+  max-width: 100%
+}
+
+li {
+  list-style: none
+}
+
+:focus {
+  outline: 0
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out
+}
+
+a:hover,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none
+}
+/*----------------------------------------------------*/
+/*font Variables*/
+/*Color Variables*/
+/*=================== fonts ====================*/
+@import url("https://fonts.googleapis.com/css?family=Oswald:300, 500, 700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/eot/Vazir-Black-FD.eot');
+  src: url('../fonts/eot/Vazir-Black-FD.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+  url('../fonts/woff2/Vazir-Black-FD.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/woff/Vazir-Black-FD.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/ttf/Vazir-Black-FD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/eot/Vazir-Bold-FD.eot');
+  src: url('../fonts/eot/Vazir-Bold-FD.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+  url('../fonts/woff2/Vazir-Bold-FD.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/woff/Vazir-Bold-FD.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/ttf/Vazir-Bold-FD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/eot/Vazir-Medium-FD.eot');
+  src: url('../fonts/eot/Vazir-Medium-FD.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+  url('../fonts/woff2/Vazir-Medium-FD.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/woff/Vazir-Medium-FD.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/ttf/Vazir-Medium-FD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/eot/Vazir-Light-FD.eot');
+  src: url('../fonts/eot/Vazir-Light-FD.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+  url('../fonts/woff2/Vazir-Light-FD.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/woff/Vazir-Light-FD.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/ttf/Vazir-Light-FD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/eot/Vazir-Light-FD.eot');
+  src: url('../fonts/eot/Vazir-Light-FD.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+  url('../fonts/woff2/Vazir-Light-FD.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/woff/Vazir-Light-FD.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/ttf/Vazir-Light-FD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/eot/Vazir-FD.eot');
+  src: url('../fonts/eot/Vazir-FD.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+  url('../fonts/woff2/Vazir-FD.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/woff/Vazir-FD.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/ttf/Vazir-FD.ttf') format('truetype');
+}
+
+
+body{
+  font-family: vazir !important;
+}
+
+
+/*      Start My Style     */
+
+
+body {
+
+  background: #3494E6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #EC6EAD, #3494E6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+h1 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.container {
+  width: 70%;
+  background-color: #fff;
+  margin: 1rem auto;
+  border-radius: 5px;
+  background-color: rgb(235, 228, 228);
+  position: relative;
+}
+
+
+header {
+  background: #f12711;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f5af19, #f12711);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 11rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.profile {
+  height: 8rem;
+  width: 8rem;
+  margin: auto;
+  position: relative;
+  top: 0.3rem;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid blue;
+
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+ 
+}
+
+.menu{
+  margin: 30px;
+}
+
+.menu > li {
+  display: inline;
+  background-color: lightgrey;
+  padding: 20px 40px;
+  margin: -3px;
+  position: relative;
+}
+
+.menu li:hover {
+  background-color: orange;
+}
+
+.menu > li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 20px;
+  z-index: 200;
+  right: 7px;
+  transition: all 0.5s ease;
+}
+
+.menu > li ul {
+  position: absolute;
+  width: 90%;
+  right: 7px;
+  opacity: 0;
+  visibility: hidden;
+  padding: 0;
+  margin-top: 60px;
+  z-index: 200;
+}
+
+.menu li ul li {
+  background-color: lightgrey;
+  padding: 15px;
+}
+
+ul li ul:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 12px; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid yellow;
+}
+
+nav {
+  border-bottom: 1px solid lightgray;
+}
+
+.main {
+  width: 60%;
+  background-color: #fff;
+  margin: 1rem auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+}
+
+input {
+  width: 40%;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 10px;
+  border: 1px solid pink;
+  padding: 5px;
+  font-family: vazir;
+
+}
+
+input {
+  outline: none;
+}
+
+h3 {
+  text-align: center;
+  line-height: 2rem;
+}
+
+form {
+  text-align: center;
+}
+
+textarea {
+  width: 40%;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 10px;
+  border: 1px solid pink;
+  padding: 5px;
+}
+
+button {
+  width: 8rem;
+  height: 2rem;
+  background-color: pink;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  font-family: vazir;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+footer {
+  height: 4rem;
+  width: 100%;
+  background-color: black;
+  margin-top: 2rem;
+}
